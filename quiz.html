@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div id="hud">
+        <div id="questionAndBar">
+            <div id="question-number">Question: 1</div>
+            <div id="progress-bar-container">
+                <div id="progressBarFull"></div>
+            </div>
+        </div>
+        <div id="scoreDiv">
+            <div id="score">Score:</div>
+            <div id="scoreCount">0</div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 id="question">What is the answer to this question?</h1>
+        <div class="choices">
+            <div class="choice" id="0">
+                <span class="choice-letter">A</span>
+                <span class="choice-text" id="c0">Choice 1</span>
+            </div>
+            <div class="choice" id="1">
+                <span class="choice-letter">B</span>
+                <span class="choice-text" id="c1">Choice 2</span>
+            </div>
+            <div class="choice" id="2">
+                <span class="choice-letter">C</span>
+                <span class="choice-text" id="c2">Choice 3</span>
+            </div>
+            <div class="choice" id="3">
+                <span class="choice-letter">D</span>
+                <span class="choice-text" id="c3">Choice 4</span>
+            </div>
+        </div>
+        <div id="end-screen" style="display: none">
+            <h1>Game Over</h1>
+            <div id="final-score">Your score: 0</div>
+            <button id="restart-button">Play Again</button>
+            <button id="home-button">Go Home</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 20px;
+  }
+  
+  .choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .choice {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .choice:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .choice-letter {
+    background-color: #4a90e2;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .choice-text {
+    flex: 1;
+    text-align: left;
+  }
+  #scoreDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  #hud {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  #progress-bar-container {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  #progressBarFull {
+    height: 20px;
+    width: 0;
+    background-color: #4a90e2;
+    transition: width 0.2s;
+  }
+  
+  #scoreCount {
+    font-size: 26px;
+    margin: 10px;
+    font-weight: bold;
+    color: #4a90e2;
+    padding: 10px;
+  }
+  
+  #question-number {
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  #end-screen {
+    text-align: center;
+  }
+  
+  #end-screen button {
+    margin: 10px;
+  }
+  #restart-button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #home-button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
