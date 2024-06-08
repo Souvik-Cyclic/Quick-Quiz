@@ -18,6 +18,7 @@ const questions = [
 
 let currentQuestionIndex = 0;
 let score = 0;
+let choiceSelected = false;
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -34,6 +35,7 @@ window.onload = function () {
 };
 
 function displayQuestion() {
+    choiceSelected = false;
     const question = questions[currentQuestionIndex];
     document.getElementById('question').innerText = question.question;
     question.choices.forEach((choice, index) => {
@@ -52,8 +54,8 @@ function updateHUD() {
 
 document.querySelectorAll('.choice').forEach(choiceElement => {
     choiceElement.addEventListener('click', function () {
-        if (choiceElement.style.backgroundColor) return;
-
+        if (choiceSelected) return;
+        choiceSelected = true;
         const selectedChoice = parseInt(choiceElement.id);
         const isCorrect = selectedChoice === questions[currentQuestionIndex].answer;
         choiceElement.style.backgroundColor = isCorrect ? 'green' : 'red';
